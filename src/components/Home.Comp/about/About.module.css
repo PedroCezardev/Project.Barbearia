@@ -1,0 +1,55 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 15vh 0px 15vh;
+    width: 80%;
+    padding: 20px; /* Ajuste conforme necessário */
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.aboutHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutHeader h1{
+    font-size: 3rem;
+}
+
+.aboutHeader hr{
+    width: 120px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.aboutGroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.aboutDescription p{
+    width: 600px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.aboutGallery img{
+    width: 10px;
+}
+
+.aboutGalleryImg{
+    width: 10%; /* Ajuste a largura conforme necessário */
+    height: 10%; /* Mantenha a proporção da imagem */
+    
+}
+

@@ -1,0 +1,48 @@
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 15vh 0px 15vh;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.addressHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.addressHeader h1{
+    font-size: 3rem;
+}
+
+.addressHeader hr{
+    width: 250px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.addressItem{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.addressItem img{
+    width: 400px;
+}
+
+.addressItem p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 5px;
+}

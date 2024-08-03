@@ -1,0 +1,80 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 15vh 0px 15vh;
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.contactHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contactHeader h1{
+    font-size: 3rem;
+}
+
+.contactHeader hr{
+    width: 400px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.contactForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactForm input{
+    width: 450px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(43, 43, 43);
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.contactForm textarea{
+    width: 440px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(43, 43, 43);
+    font-size: 1.1rem;
+    padding: 10px;
+    resize: none;
+}
+
+.contactForm button {
+    width: 35vh;
+    height: 50px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #1d43a5;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .contactForm button:hover {
+    background-color: #17347c;
+    transition: 0.5s;
+    width: 40vh;
+    height: 55px;
+  }

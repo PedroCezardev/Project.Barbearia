@@ -1,0 +1,119 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    background-color: #071434;
+}
+
+.footer h1 {
+    font-size: 3rem;
+}
+
+.footer hr {
+    width: 360px;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.footerHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footerLogo img{
+    width: 80px;;
+}
+
+.footerLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footerLinks a:hover{
+    color: rgb(253, 65, 65);
+    transition: 0.5s;
+}
+
+.footerContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.footerContact p{
+    font-weight: bold;
+}
+
+.footerContact p:hover{
+    color: rgb(253, 65, 65);
+    transition: 0.5s;
+}
+
+.footerIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.footerIcons a{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.footerIcons a:hover{
+    color: rgb(253, 65, 65);
+    transition: 0.5s;
+}
+
+.footerEmail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footerCopyright{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footerCopyright hr{
+    width: 80%;
+}
