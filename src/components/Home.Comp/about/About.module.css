@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0px 15vh 0px 15vh;
-    width: 80%;
-    padding: 20px; /* Ajuste conforme necessário */
-    max-width: 1200px; /* Ajuste conforme necessário */
-    margin: 0 auto;
+    width: 66%;
+    height: 50vh;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 100px auto;
     overflow: hidden;
+    background-color: var(--color-card);
 }
 
 .aboutHeader{
@@ -20,12 +21,13 @@
 
 .aboutHeader h1{
     font-size: 3rem;
+    color: var(--color-white);
 }
 
 .aboutHeader hr{
     width: 120px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--color-white);
     border-radius: 5px;
 }
 
@@ -41,15 +43,31 @@
     width: 600px;
     text-align: justify;
     margin-top: 50px;
+    font-size: 1.2qrem;
+    font-weight: 500;
+    color: var(--color-white);
 }
 
-.aboutGallery img{
-    width: 10px;
-}
-
-.aboutGalleryImg{
+.aboutGalleryImg {
     width: 10%; /* Ajuste a largura conforme necessário */
-    height: 10%; /* Mantenha a proporção da imagem */
-    
-}
+    height: auto; /* Mantenha a proporção da imagem */
+    object-fit: cover; /* Faz com que a imagem cubra a área do contêiner */
+  }
+  
+  .slick-slide {
+    /* Ajuste a largura e altura das imagens dentro do carrossel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px; /* Altura padrão, ajuste conforme necessário */
+  }
+  
+  .slick-track {
+    display: flex;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+  }
 

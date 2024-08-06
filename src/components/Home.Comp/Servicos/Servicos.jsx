@@ -2,40 +2,16 @@ import style from './Servicos.module.css';
 import Precos from '../../../assets/Precos';
 import Card from '../../Card/Card';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 const Servicos = () => {
+
   useEffect(() => {
-    const elements = document.querySelectorAll('[data-aos]');
-    const isVisible = (elem) => {
-      const rect = elem.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    };
-
-    const checkVisibility = () => {
-      elements.forEach((element) => {
-        if (isVisible(element)) {
-          const delay = element.getAttribute('data-aos-delay') || 0;
-          setTimeout(() => {
-            element.classList.add(style.visible);
-          }, delay);
-        }
-      });
-    };
-
-    window.addEventListener('scroll', checkVisibility);
-    window.addEventListener('resize', checkVisibility);
-
-    checkVisibility(); // Check visibility initially
-
-    return () => {
-      window.removeEventListener('scroll', checkVisibility);
-      window.removeEventListener('resize', checkVisibility);
-    };
+    AOS.init({
+      duration: 1000, // duração padrão da animação
+      offset: 50, // offset padrão da animação
+    });
   }, []);
 
   return (
@@ -51,12 +27,12 @@ const Servicos = () => {
             image={item.image}
             description={item.description}
             prices={item.prices}
-            data-aos="fade-up"
-            data-aos-delay={i * 100}
+            dataAos="fade-up"
+            dataAosDelay={i * 200}
           />
         ))}
       </div>
-      <button>Fazer Agendamento online</button>
+      <button data-aos="fade-up" data-aos-delay={Precos.length * 100}>Fazer Agendamento online</button>
     </div>
   );
 };

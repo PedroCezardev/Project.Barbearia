@@ -6,7 +6,8 @@
     margin: 0px 15vh 0px 15vh;
     width: 80%;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 100px;/* Ajuste conforme necessário */
+    margin: 70px auto;
 }
 
 .addressHeader{
@@ -20,12 +21,13 @@
 
 .addressHeader h1{
     font-size: 3rem;
+    color: var(--color-black);
 }
 
 .addressHeader hr{
     width: 250px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--color-black);
     border-radius: 5px;
 }
 
@@ -35,14 +37,26 @@
     text-align: center;
     justify-content: space-around;
     width: 80%;
+    
+}
+
+.addressItem div{
+    background-color: var(--color-card);
+    padding: 30px;
+    border-radius: 20px;
 }
 
 .addressItem img{
     width: 400px;
 }
 
+.addressItem h2{
+    color: var(--color-white);
+}
+
 .addressItem p{
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 5px;
+    color: var(--color-white);
 }
