@@ -7,7 +7,7 @@
     margin: 30px;
     padding: 5px 20px 5px 20px;
     border-radius: 20px;
-    background-color: #313134;
+    background-color: var(--color-card);
     gap: 10px;
 }
 
@@ -44,7 +44,7 @@
 .cardHeader p{
     font-weight: bold;
     font-size: 1.5rem;
-    color: rgb(253, 65, 65);
+    color: var(--color-hover);
     padding: 0px;
 }
 

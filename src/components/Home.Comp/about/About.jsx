@@ -3,17 +3,28 @@ import Slider from "react-slick";
 import image_1 from '../../../assets/gallery_img.svg';
 import image_2 from '../../../assets/hero_img.svg';
 import image_3 from '../../../assets/corte_simple.svg';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 const About = () => {
 
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          offset: 50, 
+        });
+      }, []);
+
     var settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
+        infinite: false,
+        slidesToShow: 1,
         slidesToScroll: 1,
+        width: 30,
+        height:30,
         autoplay: false,
         autoplaySpeed: 2000,
-        pauseOnHover: true
+        pauseOnHover: true  
     };
 
     const GalleryData = [
@@ -23,13 +34,13 @@ const About = () => {
     ];
 
   return (
-    <div className={style.about}>
+    <div className={style.about} data-aos="fade-up" data-aos-delay="300">
         <div className={style.aboutDescription}>
-            <div className={style.aboutHeader}>
+            <div className={style.aboutHeader} data-aos="fade-up" data-aos-delay="300">
                 <h1>Sobre</h1>
                 <hr />
             </div>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="200">
                 Bem-vindo ao nosso espaço dedicado à arte da barbearia. Na Barbearia Ninja, combinamos tradição e 
                 estilo contemporâneo para oferecer uma experiência única de cuidados masculinos. Desde cortes clássicos 
                 a tendências modernas, nossos barbeiros especializados estão aqui para criar o visual perfeito para você. 
@@ -38,15 +49,15 @@ const About = () => {
             </p>
         </div>
         <div className={style.aboutGallery}>
-            <div className={style.aboutHeader}>
+            <div className={style.aboutHeader} data-aos="fade-up" data-aos-delay="300">
                 <h1>Galeria</h1>
                 <hr />
             </div>
-            {/*<Slider { ... settings}>
+            <Slider { ... settings} data-aos="fade-up" data-aos-delay="300">
                 { GalleryData.map((data, i) => (
                     <img className={style.aboutGalleryImg} key={i} src={data.image} alt={`Galeria imagem ${data.id}`} />
                 ))}
-            </Slider>*/}
+            </Slider>
         </div>
     </div>
   )

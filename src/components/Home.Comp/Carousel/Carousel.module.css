@@ -1,0 +1,48 @@
+.carouselLogos {
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 60px 0;
+    background: #bdb7b7;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .carouselLogos:before,
+  .carouselLogos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .carouselLogos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .carouselLogos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .carouselLogos:hover .carouselLogosSlide {
+    animation-play-state: paused;
+  }
+  
+  .carouselLogosSlide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .carouselLogosSlide img {
+    height: 60px;
+    margin: 0px 70px;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  

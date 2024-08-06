@@ -1,10 +1,13 @@
 .navbar{
-    background-color: #071434;
+    background-color: var(--color-navbar);
     width: 100%;
-    height: 100px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
 }
 
 .navbarLogo{
@@ -17,7 +20,7 @@
 
 .navbarLogo h1{
     font-size: 2rem;
-    color: aliceblue;
+    color: var(--color-white);
 }
 
 .navbarLogo img{
@@ -35,13 +38,85 @@
 
 .navbarLinks a{
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 .navbarLinks a:hover{
-    color: rgb(253, 65, 65);
+    color: var(--color-hover);
     transition: 0.5s;
 }
+
+.darkMode{
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.8rem;
+    width: 3.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2.5px solid var(--color-white);
+    padding: 0;
+}
+
+.icon{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon path{
+    color: var(--color-black);
+}
+
+.iconActive {
+    background-color: var(--color-light);
+    border-radius: 5px;
+    font-size: 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconActive path{
+    font-size: 0.5rem;
+    height: 1px;
+    width: 1px;
+    color: #fff;
+}
+
+.progressBarContainer {
+    position: fixed;
+    z-index: 10;
+    background: rgba(255,255,255,0.05);
+    width: 100%;
+    top: 90px;
+    left: 0;
+    height: 11px; /* Ajuste a altura conforme necessário */
+  }
+    
+  .progressBar {
+    background: linear-gradient(to left, red, violet);
+    transform-origin: top left;
+    transform: scale(0,0);
+    opacity: 0;
+    height: 10px; /* Ajuste a altura conforme necessário */
+  }

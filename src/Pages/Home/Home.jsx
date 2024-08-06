@@ -6,6 +6,7 @@ import About from '../../components/Home.Comp/about/About';
 import Address from '../../components/Home.Comp/Address/Address';
 import Contact from '../../components/Home.Comp/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
+import Carousel from '../../components/Home.Comp/Carousel/Carousel';
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
         <section id="contact">
           <Contact />
         </section>
+        <Carousel />
         <Footer />
     </div>
   )

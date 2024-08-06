@@ -5,6 +5,8 @@
     background-size: cover;
     background-position: center;
     margin: 0px 15vh 0px 15vh;
+    margin-top: 9vh;
+    border-radius: 0px 0px 30px 30px;
 }
 
 .heroDescription{
@@ -29,7 +31,7 @@
     height: 70px;
     border-radius: 50px;
     color: #fff;
-    background-color: #1D43A5;
+    background-color: var(--color-button);
     border: none;
     font-size: 20px;
     font-weight: bold;

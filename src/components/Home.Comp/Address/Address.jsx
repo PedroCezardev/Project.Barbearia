@@ -1,5 +1,8 @@
 import style from './Address.module.css';
 import endereco_img from '../../../assets/endereco.svg';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 const Address = () => {
 
@@ -18,15 +21,22 @@ const Address = () => {
         },
     ];
 
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // duração padrão da animação
+          offset: 50, // offset padrão da animação
+        });
+      }, []);
+
   return (
     <div className={style.address}>
-        <div className={style.addressHeader}>
+        <div className={style.addressHeader} data-aos="fade-up" data-aos-delay="300">
             <h1>Nossas Unidades</h1>
             <hr />
         </div>
         <div className={style.addressItem}>
             { EnderecoData.map((item, i) => (
-                <div key={i}>
+                <div key={i} data-aos="fade-up" data-aos-delay={i * 200}>
                     <img src={item.imagem} alt="" />
                     <h2>{item.Unidade}</h2>
                     <p>{item.Endereco}</p>
