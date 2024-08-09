@@ -6,7 +6,7 @@
     margin: 100px auto;
     padding: 30px;
     border-radius: 20px;
-    width: 35%;
+    width: 40%;
     margin-bottom: 50px;
     background-color: var(--color-card);
 }
@@ -21,11 +21,11 @@
 }
 
 .contactHeader h1{
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 .contactHeader hr{
-    width: 400px;
+    width: 350px;
     height: 3px;
     background-color: var(--color-white);
     border-radius: 5px;
@@ -36,6 +36,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+     width: 300px;  
 }
 
 .contactForm input{
@@ -72,11 +73,103 @@
     font-weight: bold;
     cursor: pointer;
     margin-top: 30px;
-  }
+}
   
   .contactForm button:hover {
     background-color: #17347c;
     transition: 0.5s;
     width: 40vh;
     height: 55px;
-  }
+}
+
+@media (max-width: 1250px){
+    .contact{
+        width: 45%;
+    }
+
+    .contactHeader h1{
+        font-size: 2.5rem;
+    }
+
+    .contactHeader hr{
+        width: 280px;
+    }
+}
+
+@media (max-width: 1050px){
+    .contact{
+        width: 47%;
+    }
+
+    .contactHeader h1{
+        font-size: 2rem;
+    }
+
+    .contactHeader hr{
+        width: 260px;
+    }
+
+    .contactForm input{
+        width: 320px;
+    }    
+
+    .contactForm textarea{
+        width: 310px;
+    }
+
+    .contactForm button{
+        width: 30vh;
+    }
+}
+
+@media (max-width: 800px){
+    .contact{
+        width: 350px;
+    }
+
+    .contactHeader h1{
+        font-size: 1.8rem;
+    }
+
+    .contactHeader hr{
+        width: 220px;
+    }
+
+    .contactForm input{
+        width: 320px;
+    }    
+
+    .contactForm textarea{
+        width: 310px;
+    }
+
+    .contactForm button{
+        width: 30vh;
+    }
+}
+
+@media (max-width: 500px){
+    .contact{
+        width: 300px;
+    }
+
+    .contactHeader h1{
+        font-size: 1.6rem;
+    }
+
+    .contactHeader hr{
+        width: 200px;
+    }
+
+    .contactForm input{
+        width: 290px;
+    }    
+
+    .contactForm textarea{
+        width: 280px;
+    }
+
+    .contactForm button{
+        width: 25vh;
+    }
+}

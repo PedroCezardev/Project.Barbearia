@@ -111,12 +111,57 @@
     top: 90px;
     left: 0;
     height: 11px; /* Ajuste a altura conforme necessário */
-  }
-    
-  .progressBar {
+}
+
+.progressBar {
     background: linear-gradient(to left, red, violet);
     transform-origin: top left;
     transform: scale(0,0);
     opacity: 0;
     height: 10px; /* Ajuste a altura conforme necessário */
-  }
+}
+
+@media (max-width: 1250px){
+    .navbarLogo h1{
+        font-size: 1.8rem;
+    }
+
+    .navbarLogo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbarLinks a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 850px){
+    .navbarLogo {
+        font-size: 1.5rem;
+    }
+
+    .navbarLogo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbarLinks a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+    .navbarLogo{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .navbarLogo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbarLinks a{
+        font-size: 1rem;
+    }
+}
