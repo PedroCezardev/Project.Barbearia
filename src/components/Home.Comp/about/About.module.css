@@ -54,20 +54,24 @@
     object-fit: cover; /* Faz com que a imagem cubra a área do contêiner */
   }
   
-  .slick-slide {
-    /* Ajuste a largura e altura das imagens dentro do carrossel */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px; /* Altura padrão, ajuste conforme necessário */
-  }
+.slick-slide {
+  /* Ajuste a largura e altura das imagens dentro do carrossel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px; /* Altura padrão, ajuste conforme necessário */
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+@media (max-width: 1250px){
   
-  .slick-track {
-    display: flex;
-  }
-  
-  .slick-prev,
-  .slick-next {
-    z-index: 1;
-  }
+}
 
