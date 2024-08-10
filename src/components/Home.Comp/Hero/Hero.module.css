@@ -125,4 +125,13 @@
         height: 50px;
         width: 80%;
     }
+
+    .heroDescription h1{
+        font-size: 2rem;   
+    } 
+    
+    .heroDescription p{
+        font-size: 1rem;   
+    }
+    
 }
