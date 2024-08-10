@@ -17,14 +17,12 @@ const About = () => {
       }, []);
 
     var settings = {
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        width: 30,
-        height:30,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
-        pauseOnHover: true  
+        pauseOnHover: true,
     };
 
     const GalleryData = [
@@ -53,7 +51,7 @@ const About = () => {
                 <h1>Galeria</h1>
                 <hr />
             </div>
-            <Slider { ... settings} data-aos="fade-up" data-aos-delay="300">
+            <Slider { ... settings} data-aos="fade-up" data-aos-delay="300" className={style.aboutSlider}>
                 { GalleryData.map((data, i) => (
                     <img className={style.aboutGalleryImg} key={i} src={data.image} alt={`Galeria imagem ${data.id}`} />
                 ))}

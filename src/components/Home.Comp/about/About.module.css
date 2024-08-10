@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 66%;
+    width: 120vh;
     height: 50vh;
-    padding: 40px;
+    padding: 30px;
     border-radius: 20px;
     margin: 100px auto;
     overflow: hidden;
@@ -31,47 +31,142 @@
     border-radius: 5px;
 }
 
-.aboutGroup{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 50px;
-}
-
 .aboutDescription p{
-    width: 600px;
+    width: 400px;
     text-align: justify;
     margin-top: 50px;
-    font-size: 1.2qrem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--color-white);
 }
 
-.aboutGalleryImg {
-    width: 10%; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantenha a proporção da imagem */
-    object-fit: cover; /* Faz com que a imagem cubra a área do contêiner */
-  }
-  
-.slick-slide {
-  /* Ajuste a largura e altura das imagens dentro do carrossel */
-  display: flex;
-  justify-content: center;
+.aboutGallery{
   align-items: center;
-  height: 30px; /* Altura padrão, ajuste conforme necessário */
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.slick-track {
-  display: flex;
+.aboutSlider{
+  margin-top: 50px;
+  width: 60vh;
+  height: 30vh;
+  border-radius: 20px;
 }
 
-.slick-prev,
-.slick-next {
-  z-index: 1;
-}
+.aboutSlider img{
+  border-radius: 20px;
+  object-fit: cover;
+  height: 33vh;
+}   
+
 
 @media (max-width: 1250px){
-  
+
+  .about{
+    width: 100vh;
+    height: 60vh;
+    gap: 30px;
+  }
+
+  .aboutDescription p{
+    width: 400px;
+   
+    margin-top: 50px;
+    font-size: 1rem;
+  }
+
+  .aboutSlider{
+    margin-top: 50px;
+    width: 50vh;
+    height: 30vh;
+  }
+
+  .aboutSlider img{
+    height: 33vh;
+  } 
+}
+
+@media (max-width: 1050px){
+
+  .about{
+    width: 75vh;
+    height: 50vh;
+    gap: 10px;
+  }
+
+  .aboutDescription p{
+    width: 300px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+
+  .aboutSlider{
+    margin-top: 50px;
+    width: 35vh;
+    height: 30vh;
+  }
+
+  .aboutSlider img{
+    height: 33vh;
+  } 
+}
+
+@media (max-width: 800px){
+
+  .about{
+    width: 45vh;
+    height: 90vh;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .aboutDescription p{
+    width: 400px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+
+  .aboutSlider{
+    margin-top: 50px;
+    width: 45vh;
+    height: 30vh;
+  }
+
+  .aboutSlider img{
+    height: 33vh;
+  } 
+}
+
+@media (max-width: 500px){
+
+  .about{
+    width: 35vh;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .aboutDescription p{
+    width: 320px;
+    margin-top: 50px;
+    font-size: 0.7rem;
+  }
+
+  .aboutSlider{
+    margin-top: 50px;
+    width: 35vh;
+    height: 30vh;
+  }
+
+  .aboutSlider img{
+    height: 33vh;
+  } 
 }
 

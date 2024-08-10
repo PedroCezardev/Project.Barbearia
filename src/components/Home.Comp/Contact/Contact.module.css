@@ -26,7 +26,7 @@
 
 .contactHeader hr{
     width: 350px;
-    height: 3px;
+    height: 2px;
     background-color: var(--color-white);
     border-radius: 5px;
 }
@@ -150,11 +150,15 @@
 
 @media (max-width: 500px){
     .contact{
-        width: 300px;
+        width: 280px;
+    }
+
+    .contactHeader{
+        margin-bottom: 20px;
     }
 
     .contactHeader h1{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .contactHeader hr{
@@ -162,14 +166,20 @@
     }
 
     .contactForm input{
-        width: 290px;
+        width: 270px;
+        height: 30px;
+        font-size: 0.9rem;
+        margin: 15px;
     }    
 
     .contactForm textarea{
-        width: 280px;
+        width: 260px;
+        height: 80px;
+        margin: 10px;
     }
 
     .contactForm button{
         width: 25vh;
+        margin-top: 20px;
     }
 }

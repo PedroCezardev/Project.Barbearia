@@ -71,5 +71,14 @@
     height: 60px;
     font-size: 15px;
   }
+
+  .servicos h1 {
+    font-size: 2.5rem;
+  }
+  
+  .servicos hr {
+    width: 120px;
+    height: 3px;
+  }
 }
   

@@ -1,48 +1,86 @@
-.carouselLogos {
-    margin: 100px auto;
-    overflow: hidden;
-    padding: 60px 0;
-    background: #bdb7b7;
-    white-space: nowrap;
-    position: relative;
+@keyframes slide {
+  from {
+    transform: translateX(0);
   }
-  
-  .carouselLogos:before,
-  .carouselLogos:after {
-    position: absolute;
-    top: 0;
-    width: 180px;
-    height: 100%;
-    content: "";
-    z-index: 2;
+  to {
+    transform: translateX(-100%);
   }
-  
-  .carouselLogos:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #bdb7b7;
+  white-space: nowrap;
+  position: relative;
+  height: 130px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logosSlide {
+  animation-play-state: paused;
+}
+
+.logosSlide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.logosSlide img {
+  height: 130px;
+  width: 130px;
+  margin: 0 70px;
+}
+
+@media (max-width: 800px){
+  .logos:after,
+  .logos:before{
+    width: 100px;
   }
-  
-  .carouselLogos:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+
+  .logos{
+    height: 50px;
   }
-  
-  .carouselLogos:hover .carouselLogosSlide {
-    animation-play-state: paused;
+
+  .logosSlide img {
+    height:80px;
+    width: 80px;
   }
-  
-  .carouselLogosSlide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
+}
+
+@media (max-width: 500px){
+  .logos:after,
+  .logos:before{
+    width: 70px;
   }
-  
-  .carouselLogosSlide img {
-    height: 60px;
-    margin: 0px 70px;
+
+  .logos{
+    height: 40px;
   }
-  
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+
+  .logosSlide img {
+    height: 70px;
+    width: 70px;
   }
-  
+}

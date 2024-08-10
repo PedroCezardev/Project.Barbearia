@@ -4,9 +4,9 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 65vh;
+    height: 50%;
     background-color: #071434;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .footer h1 {
@@ -159,7 +159,7 @@
     }
 
     .footerLinks{
-        gap: 10px;
+        gap: 5px;
     }
 
     .footerLinks a{
