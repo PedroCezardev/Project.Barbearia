@@ -95,6 +95,15 @@
     gap: 10px;
   }
 
+  .aboutHeader h1{
+    font-size: 2.5rem;
+  }
+
+  .aboutHeader hr{
+    width: 80px;
+    height: 1.5px;
+  }
+
   .aboutDescription p{
     width: 300px;
     margin-top: 50px;
@@ -153,15 +162,24 @@
     padding: 25px;
   }
 
+  .aboutHeader h1{
+    font-size: 2rem;
+  }
+
+  .aboutHeader hr{
+    width: 60px;
+    height: 1.5px;
+  }
+
   .aboutDescription p{
-    width: 320px;
+    width: 300px;
     margin-top: 50px;
     font-size: 0.7rem;
   }
 
   .aboutSlider{
     margin-top: 50px;
-    width: 35vh;
+    width: 33vh;
     height: 30vh;
   }
 
