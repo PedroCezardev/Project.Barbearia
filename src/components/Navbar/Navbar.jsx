@@ -1,9 +1,11 @@
 import style from './Navbar.module.css'
 import logo_img from '../../assets/Barber Pole.svg';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';  // Alias para o Link do react-scroll
+import { Link as RouterLink } from 'react-router-dom'; 
 import { useState, useEffect, useRef } from 'react'
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
+import { FaCircleUser } from "react-icons/fa6";
 
 const Navbar = () => {
 
@@ -52,6 +54,9 @@ const Navbar = () => {
         navRef.current.classList.toggle(style.active); // Usa a classe do módulo CSS
       }
     };
+
+    // criando indice de páginas
+    const [menu, setMenu] = useState("shop");
   
   return (
     <div className={style.navbar}>
@@ -60,13 +65,16 @@ const Navbar = () => {
             <h1>Barber Ninja</h1>
         </div>
         <div ref={navRef} className={`${style.navbarLinks} nav`}>
-          <Link to="agendamentos" smooth={true} duration={500}>Agendamentos</Link>
-          <Link to="servicos" smooth={true} duration={500}>Serviços</Link>
-          <Link to="about" smooth={true} duration={500}>Sobre</Link>
-          <Link to="address" smooth={true} duration={500}>Endereço</Link>
-          <Link to="contact" smooth={true} duration={500}>Contato</Link>
+          <li onClick={() => {setMenu("home")}}>  <RouterLink to='/'>Home</RouterLink> {menu === "home" ? <hr/>: <> </> }</li>
+          <li onClick={() => {setMenu("home")}}>  <RouterLink to='/agendamento'>Agendamento</RouterLink> {menu === "home" ? <hr/>: <> </> }</li>
+          <ScrollLink to="servicos" smooth={true} duration={500}>Serviços</ScrollLink>
+          <ScrollLink to="about" smooth={true} duration={500}>Sobre</ScrollLink>
+          <ScrollLink to="address" smooth={true} duration={500}>Endereço</ScrollLink>
         </div>
         <div className={style.navbarButtons}>
+          <div className={style.navbarIcon}>
+            <a href="/perfil"> <FaCircleUser /> </a>
+          </div>
           <div className={style.darkMode}>
             <button className={style.button} onClick={toggleTheme} >
               {theme === 'light' ?
@@ -75,6 +83,13 @@ const Navbar = () => {
             </button>
           </div>
           <button ref={hamburgerRef} onClick={handleHamburgerClick} className={style.navbarHamburguer}></button>
+          <div className={style.navLoginCart}>
+            { localStorage.getItem('auth-token')
+              ? <button onClick={() => {localStorage.removeItem('auth-token'); 
+                  window.location.replace('/')}} >Sair</button>
+              : <RouterLink to="/login"><button>Entrar</button></RouterLink> 
+            }
+          </div>
         </div>
         <div className={style.progressBarContainer}>
           <div className={style.progressBar} style={{ transform: `scale(${scroll}, 1)`, opacity: `${scroll}` }} />
