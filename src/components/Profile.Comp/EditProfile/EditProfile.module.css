@@ -5,10 +5,38 @@
     box-shadow: 0 2rem 3rem  var(--color-box-shadow);
     transition: all 0.3s ease;
     width: 70%;
+    padding: 20px;
 }
 
 .editProfile:hover{
     box-shadow: none;
+}
+
+/* estilização para todos os butões da página */
+.editProfile button{
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: var(--color-button);
+    border: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.editProfile button:hover{
+    background-color: #17347c;
+    transition: 0.5s;
+}
+
+/* estilização para todo inputs da página */
+.editProfile input{
+    width: 250px;
+    height: 13px;
+    margin-top: 0;
+    background-color: rgb(187, 187, 187);
+    color: rgb(32, 32, 32);
 }
 
 /* div do Header */
@@ -16,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10vh;
+    gap: 15vh;
     height: 30vh;
 }
 
@@ -34,24 +62,6 @@
     width: 200px;
     height: 200px;
     border-radius: 100px;
-}
-
-/* estilização do butão */
-.editHeaderImage button{
-    width: 140px;
-    height: 30px;
-    border-radius: 50px;
-    color: #fff;
-    background-color: var(--color-button);
-    border: none;
-    font-size: 0.7rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.editHeaderImage button:hover{
-    background-color: #17347c;
-    transition: 0.5s;
 }
 
 /* estilização da div do nome */
@@ -93,27 +103,50 @@
     font-weight: 500;
 }
 
-.editHeaderNameAlter input{
+/* estilização da section container */
+.editContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10vh;
+}
+
+/* estilização para alterar email */
+.editContent{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    gap: 20px;
+}
+
+.editContentEmail{
+    font-size: 15px;
+    color: var(--color-black);
+    display: flex;
+    gap: 20px;
+}
+
+.editContent h1{
+    font-size: 18px;
+    color: var(--color-black);
+}
+
+.editContent p{
+    font-size: 15px;
+    color: var(--color-black);
+    width: 280px;
+}
+
+.editContent textarea{
     width: 250px;
-    height: 13px;
-    margin-top: 0;
-    background-color: rgb(187, 187, 187);
-    color: rgb(32, 32, 32);
-}
-
-.editHeaderNameAlter button{
-    width: 110px;
-    height: 30px;
-    border-radius: 50px;
-    color: #fff;
-    background-color: var(--color-button);
+    height: 80px;
+    border-radius: 5px;
     border: none;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.editHeaderNameAlter button:hover{
-    background-color: #17347c;
-    transition: 0.5s;
+    background-color: rgb(187, 187, 187);
+    color: rgb(43, 43, 43);
+    font-size: 0.9rem;
+    padding: 10px;
+    resize: none;
 }

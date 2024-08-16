@@ -3,10 +3,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 96%;
     height: 50%;
-    background-color: #071434;
+    background-color: var(--color-navbar);
     margin-top: 80px;
+    padding:38px;
 }
 
 .footer h1 {

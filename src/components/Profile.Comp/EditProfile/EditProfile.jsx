@@ -17,22 +17,30 @@ const EditProfile = () => {
                 <div className={style.editHeaderNameAlter}>
                     <p>Deseja alterar nome de usuário?</p>
                     <input type="text" placeholder='Digite seu novo nome' />
-                    <button>Atualizar</button>
+                    <button>Alterar</button>
                 </div>
             </div>
         </div>
         <div className={style.editContainer}>
             <div className={style.editContent}>
-                <h1>Alterar Email</h1>
-                <p>user1@gmail.com</p>
+                <div className={style.editContentEmail}>
+                    <h1>Seu Email de usuário:</h1>
+                    <p>user1@gmail.com</p>
+                </div>
+                <p>Deseja alterar Email de usuário?</p>
                 <input type="text" placeholder='Digite seu Email' />
+                <button>Alterar</button>
             </div>
             <div className={style.editContent}>
-                <h1>Alterar Descrição</h1>
-                <p>LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
-                LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+                <h1>Sua Descrição de usuário: </h1>
+                <p>LoremIpsumLoremIpsumLoremIpsum
+                    IpsumLoremIpsumLoremIpsumLorem
+                    IpsumLoremIpsumLoremIpsumLorem
+                    LoremIpsumLoremIpsumLoremIpsum
                 </p>
-                <input type="text" placeholder='Digite aqui' />
+                <p>Deseja alterar Descrição de usuário?</p>
+                <textarea type="text" placeholder='Digite aqui' />
+                <button>Alterar</button>
             </div>
         </div>
     </div>
