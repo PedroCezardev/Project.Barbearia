@@ -3,18 +3,21 @@
 @tailwind utilities;
 
 :root{
-  --color-white: #f5f5f5;
-  --color-light: #aaaaaa;
+  --color-white: #f0f0f0;
+  --color-light: #c9c9c9;
   --color-black: #171717;
   --color-navbar: #071434;
+  --color-sidebar: #ebebeb;
   --color-hover: rgb(253, 65, 65);
   --color-button: #1D43A5;
   --color-card: #313134;
+  --color-box-shadow: rgba(85, 88, 121, 0.18);
 }
 
 [data-theme='dark'] {
   --color-light: #171717;
   --color-navbar: #111827;
+  --color-sidebar: #36383b;
   --color-black: #DFE0E1;
   --color-button: #0d2052;
 }

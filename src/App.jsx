@@ -12,6 +12,7 @@ const App = () => {
           <Route path='/agendamento' element={ <Agendar />}/>  
           <Route path='/Login' element={ <LoginSignup />}/>
           <Route path='/perfil' element={ <Profile />}/>
+          <Route path='/perfil/EditarPerfil' element={ <Profile /> }/>
         </Routes>
       </BrowserRouter>
   )
