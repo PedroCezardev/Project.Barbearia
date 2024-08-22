@@ -15,10 +15,9 @@ const CentralLogin = () => {
   return (
     <div className={style.container}>
       <div className={style.buttonsForm}>
-        <div
-          className={style.btnColor}
-          style={{ left: activeForm === 'signin' ? '0px' : '110px' }}
-        ></div>
+        <div className={style.btnColor}
+              style={{ left: activeForm === 'signin' ? '0px' : '110px' }}>
+        </div>
         <button id="btnSignin" onClick={handleSigninClick}>
           Entrar
         </button>
@@ -27,11 +26,7 @@ const CentralLogin = () => {
         </button>
       </div>
 
-      <form
-        id="signin"
-        className={style.form}
-        style={{ left: activeForm === 'signin' ? '25px' : '-450px' }}
-      >
+      <form id="signin" className={style.form} style={{ left: activeForm === 'signin' ? '25px' : '-450px' }}>
         <input type="text" placeholder="Email" required />
         <i className={`fas fa-envelope ${style.iEmail}`}></i>
         <input type="password" placeholder="Senha" required />

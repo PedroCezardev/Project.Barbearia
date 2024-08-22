@@ -18,10 +18,6 @@ const Footer = () => {
 
   return (
     <div className={style.footer} data-aos="fade-up" data-aos-delay="300">
-        {/* <div className={style.footerHeader}>
-            <h1>Social e Contatos</h1>
-            <hr />
-        </div> */}
         <div className={style.footerLogo}>
             <img src={logo_img} alt="" />
             <h2>Barber Ninja</h2>

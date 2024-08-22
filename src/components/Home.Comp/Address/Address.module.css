@@ -36,18 +36,28 @@
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
-    width: 80%; 
+    justify-content: center;
+    gap: 10vh;
+    width: 80%;
 }
 
 .addressItem div{
     background-color: var(--color-card);
     padding: 30px;
     border-radius: 20px;
+    box-shadow: 0 2rem 3rem  var(--color-box-shadow);
+    transition: all 0.3s ease; 
 }
 
-.addressItem img{
-    width: 400px;
+.addressItem div:hover{
+    box-shadow: none;
+}
+
+.addressItem iframe{
+    width: 450;
+    height: 400;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .addressItem h2{
@@ -64,14 +74,38 @@
 @media (max-width: 1250px){
 
     .addressItem{
-        width: 100%; 
-        display: flex;
-        justify-content: space-around;
+        gap: 5vh;
+    }
+
+    .addressItem iframe{
+        width: 350px;
+        height: 350px;
+    }
+
+    .addressItem div{
+        width: 380px;
+        height: 480px;
+    }
+
+    .addressItem img{
+        width: 320px;
+    }
+}
+
+@media (max-width: 1050px){
+
+    .addressItem{
+        gap: 5vh;
+    }
+
+    .addressItem iframe{
+        width: 280px;
+        height: 350px;
     }
 
     .addressItem div{
         width: 300px;
-        height: 320px;
+        height: 480px;
     }
 
     .addressItem img{
@@ -90,9 +124,18 @@
         gap: 30px;
     }
 
+    .addressItem{
+        gap: 5vh;
+    }
+
+    .addressItem iframe{
+        width: 320px;
+        height: 320px;
+    }
+
     .addressItem div{
         width: 350px;
-        height: 250px;
+        height: 400px;
     }
 
     .addressItem img{
@@ -118,9 +161,16 @@
 }
 
 @media (max-width: 500px){
+
+    .addressItem iframe{
+        width: 260px;
+        height: 320px;
+        margin: 0px;
+    }
+
     .addressItem div{
         width: 280px;
-        height: 180px;
+        height: 380px;
     }
 
     .addressItem img{

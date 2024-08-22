@@ -1,14 +1,20 @@
 .about{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 120vh;
-    height: 50vh;
-    padding: 30px;
-    border-radius: 20px;
-    margin: 100px auto;
-    overflow: hidden;
-    background-color: var(--color-card);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 120vh;
+  height: 50vh;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 100px auto;
+  overflow: hidden;
+  background-color: var(--color-card);
+  box-shadow: 0 2rem 3rem  var(--color-box-shadow);
+  transition: all 0.3s ease;
+}
+
+.about:hover{
+  box-shadow: none;
 }
 
 .aboutHeader{
@@ -154,7 +160,7 @@
 
   .about{
     width: 35vh;
-    height: 85vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +178,7 @@
   }
 
   .aboutDescription p{
-    width: 300px;
+    width: 250px;
     margin-top: 50px;
     font-size: 0.7rem;
   }
@@ -184,7 +190,8 @@
   }
 
   .aboutSlider img{
-    height: 33vh;
+    height: 35vh;
+    margin-bottom: 10px;
   } 
 }
 
