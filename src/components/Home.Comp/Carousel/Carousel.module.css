@@ -13,9 +13,15 @@
   background: #bdb7b7;
   white-space: nowrap;
   position: relative;
-  height: 130px;
+  height: 90px;
   width: 100%;
   margin-top: 80px;
+  box-shadow: 0 2rem 3rem  var(--color-box-shadow);
+  transition: all 0.3s ease; 
+}
+
+.logos:hover{
+  box-shadow: none;
 }
 
 .logos:before,

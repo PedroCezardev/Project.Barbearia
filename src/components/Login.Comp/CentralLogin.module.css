@@ -15,11 +15,11 @@
   box-shadow: 0 0 20px 0 darkgrey;
 }
 
-form {
+.form {
   position: absolute;
   margin-top: 80px;
   transition: .5s;
-  width: 300px;
+  width: 280px;
   height: 400px;
 }
 

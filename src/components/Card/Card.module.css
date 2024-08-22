@@ -9,6 +9,12 @@
     border-radius: 20px;
     background-color: var(--color-card);
     gap: 15px;
+    box-shadow: 0 2rem 3rem  var(--color-box-shadow);
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: none;
 }
 
 .card img{

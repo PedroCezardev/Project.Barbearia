@@ -13,7 +13,7 @@ const logos = [
 
 const Carousel = () => {
   return (
-    <div className={style.logos}>
+    <div className={style.logos} data-aos="fade-up" data-aos-delay="300">
       <div className={style.logosSlide}>
         {logos.map((logo, index) => (
           <img key={index} src={logo} alt={`Logo ${index + 1}`} />

@@ -16,12 +16,12 @@ const Contact = () => {
   return (
     <div className={style.contact} data-aos="fade-up" data-aos-delay="300">
         <div className={style.contactHeader} data-aos="fade-up" data-aos-delay="300">
-            <h1>Formulário de Contato</h1>
+            <h1>Formulário de Contato para Suporte</h1>
             <hr />
         </div>
         <div className={style.contactForm}>
-            <input type="text" placeholder='Nome' data-aos="fade-up" data-aos-delay="300" />
-            <input type="text" placeholder='E-mail' data-aos="fade-up" data-aos-delay="300" />
+            <input className={style.input} type="text" placeholder='Nome' data-aos="fade-up" data-aos-delay="300" />
+            <input className={style.input} type="text" placeholder='E-mail' data-aos="fade-up" data-aos-delay="300" />
             <textarea className={style.contactInput} type="text" placeholder='Mensagem' data-aos="fade-up" data-aos-delay="300" />
             <button data-aos="fade-up" data-aos-delay="300" >Enviar</button>
         </div>
