@@ -3,31 +3,24 @@ import logo_img from '../../assets/Barber Pole.svg';
 import { FaInstagram, FaLocationArrow, FaMobileAlt, FaWhatsapp } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { Link } from 'react-scroll';
-import { useEffect } from 'react';
 import 'aos/dist/aos.css'; 
-import AOS from 'aos';
 
 const Footer = () => {
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // duração padrão da animação
-      offset: 50, // offset padrão da animação
-    });
-  }, []);
+  
 
   return (
-    <div className={style.footer} data-aos="fade-up" data-aos-delay="300">
+    <div className={style.footer}>
         <div className={style.footerLogo}>
             <img src={logo_img} alt="" />
             <h2>Barber Ninja</h2>
         </div>
         <div className={style.footerLinks}>
-          <Link to="agendamentos" smooth={true} duration={500}>Agendamentos</Link>
-          <Link to="servicos" smooth={true} duration={500}>Serviços</Link>
-          <Link to="about" smooth={true} duration={500}>Sobre</Link>
-          <Link to="address" smooth={true} duration={500}>Endereço</Link>
-          <Link to="contact" smooth={true} duration={500}>Contato</Link>
+          <Link to="agendamentos">Agendamentos</Link>
+          <Link to="servicos" >Serviços</Link>
+          <Link to="about" >Sobre</Link>
+          <Link to="address" >Endereço</Link>
+          <Link to="contact" >Contato</Link>
         </div>
         <div className={style.footerContact}>
             <FaMobileAlt />
