@@ -4,22 +4,24 @@
 
 :root{
   --color-white: #f0f0f0;
-  --color-light: #c9c9c9;
+  --color-light: #f1f1f1;
   --color-black: #171717;
-  --color-navbar: #071434;
+  --color-navbar: #010d7a;
+  --color-footer: #090041;
   --color-sidebar: #ebebeb;
   --color-hover: rgb(253, 65, 65);
-  --color-button: #1D43A5;
+  --color-button: #1a04ae;
   --color-card: #313134;
   --color-box-shadow: rgba(85, 88, 121, 0.18);
 }
 
 [data-theme='dark'] {
   --color-light: #171717;
-  --color-navbar: #111827;
+  --color-navbar: #090041;
+  --color-footer: #090041;
   --color-sidebar: #36383b;
   --color-black: #DFE0E1;
-  --color-button: #0d2052;
+  --color-button: #0f006d;
 }
 
 *{

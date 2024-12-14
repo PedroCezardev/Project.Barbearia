@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+.container {
+  margin-top: 120px;
+  background-color: var(--color-light);
+  padding: 6px;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-top: 80px;
+  transition: .5s;
+  width: 380px;
+  height: 400px;
+
+  input[type="text"], input[type="password"] {
+    border: 1px solid #bebebe;
+    margin-top: 15px;
+    border-radius: 60px;
+    padding: 8px 0 8px 65px;
+    outline: none;
+    width: 100%;
+    height: 30px;
+  }
+
+}
+
+.buttonsForm {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 rgb(70, 43, 226);
+
+  button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+  }
+
+}
+
+.btnColor {
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #364aff, #a963f8);
+  border-radius: 30px;
+  transition: .3s;
+}
+
+.button[type="submit"] {
+  background: var(--color-button);
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.button:hover{
+  transform: scale(1.05); 
+  background-color: #0f006d;
+  transition: 0.5s;
+}
+
+.divCheck {
+  margin: 20px 0 0 0px;
+  width: 95%; 
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+
+  span{
+    left: 0px;
+    color: rgb(66, 66, 66);
+  }
+
+}
+
+#signin {
+  left: 25px;
+  width: 700px;
+
+  .btnSignin{
+    color: #fff;
+  }
+
+}
+
+#signup {
+  left: 450px;
+  width: 700px;
+
+  .btnSignin{
+    color: #000;
+  }
+}
+
+i {
+  position: absolute;
+  left: 0;
+  padding: 10px 10px;
+}
+
+.iEmailLogin{
+  top: 22px;
+  color: #969696;
+}
+
+.iPasswordLogin{
+  top:85px;
+  color: #969696;
+}
+
+.iNome {
+  top: 22px;
+  color: #969696;
+}
+
+.iEmail {
+  top:85px;
+  color: #969696;
+}
+
+.iPassword {
+  top: 145px;
+  color: #969696;
+}
+
+.iPassword2 {
+  top: 210px;
+  color: #969696;
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import style from './CentralLogin.module.css';
+import style from './CentralLogin.module.scss';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const CentralLogin = () => {
   const [activeForm, setActiveForm] = useState('signin');
@@ -16,9 +17,9 @@ const CentralLogin = () => {
     <div className={style.container}>
       <div className={style.buttonsForm}>
         <div className={style.btnColor}
-              style={{ left: activeForm === 'signin' ? '0px' : '110px' }}>
+              style={{ left: activeForm === 'signin' ? '0px' : '115px' }}>
         </div>
-        <button id="btnSignin" onClick={handleSigninClick}>
+        <button className={style.btnSignin} id="btnSignin" onClick={handleSigninClick}>
           Entrar
         </button>
         <button id="btnSignup" onClick={handleSignupClick}>
@@ -26,38 +27,37 @@ const CentralLogin = () => {
         </button>
       </div>
 
-      <form id="signin" className={style.form} style={{ left: activeForm === 'signin' ? '25px' : '-450px' }}>
+      <form id="signin" className={style.form} style={{ left: activeForm === 'signin' ? '180px' : '-750px' }}>
         <input type="text" placeholder="Email" required />
-        <i className={`fas fa-envelope ${style.iEmail}`}></i>
+        <i className={`fas fa-envelope ${style.iEmailLogin}`}></i>
         <input type="password" placeholder="Senha" required />
-        <i className={`fas fa-lock ${style.iPassword}`}></i>
+        <i className={`fas fa-lock ${style.iPasswordLogin}`}></i>
         <div className={style.divCheck}>
           <input type="checkbox" />
           <span>Lembrar da Senha</span>
         </div>
-        <button type="submit">Entrar</button>
+        <button className={style.button} type="submit">Entrar</button>
       </form>
 
       <form
         id="signup"
         className={style.form}
-        style={{ left: activeForm === 'signup' ? '25px' : '450px' }}
+        style={{ left: activeForm === 'signup' ? '180px' : '750px' }}
       >
+         <input type="text" placeholder="Nome" required />
+         <i className={`fas fa-envelope ${style.iNome}`}></i>
         <input type="text" placeholder="Email" required />
         <i className={`fas fa-envelope ${style.iEmail}`}></i>
         <input type="password" placeholder="Senha" required />
         <i className={`fas fa-lock ${style.iPassword}`}></i>
-        <input
-          type="password"
-          placeholder="Confirme a Senha"
-          required
+        <input type="password" placeholder="Confirme a Senha" required
         />
         <i className={`fas fa-lock ${style.iPassword2}`}></i>
         <div className={style.divCheck}>
           <input type="checkbox" required />
           <span>Termos de Privacidade</span>
         </div>
-        <button type="submit">Cadastrar</button>
+        <button className={style.button} type="submit">Cadastrar</button>
       </form>
     </div>
   );
