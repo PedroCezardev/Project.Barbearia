@@ -1,0 +1,9 @@
+.agendar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que a altura mínima seja 100% da altura da tela */
+  }
+  
+  .agendar > *:first-child {
+    flex: 1; /* Faz com que o conteúdo principal (Navbar, etc.) ocupe o espaço disponível */
+  }

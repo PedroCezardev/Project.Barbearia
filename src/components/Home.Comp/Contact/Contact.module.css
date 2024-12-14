@@ -3,10 +3,18 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0px 15vh 0px 15vh;
-    width: 80%;
-    margin-top: 70px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 40%;
     margin-bottom: 50px;
+    background-color: var(--color-card);
+    box-shadow: 0 2rem 3rem  var(--color-box-shadow);
+    transition: all 0.3s ease; 
+}
+
+.contact:hover{
+    box-shadow: none;
 }
 
 .contactHeader{
@@ -19,13 +27,13 @@
 }
 
 .contactHeader h1{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .contactHeader hr{
-    width: 400px;
-    height: 3px;
-    background-color: #fff;
+    width: 350px;
+    height: 2px;
+    background-color: var(--color-white);
     border-radius: 5px;
 }
 
@@ -34,9 +42,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 300px;  
 }
 
-.contactForm input{
+.contactForm .input{
     width: 450px;
     height: 50px;
     margin: 20px;
@@ -64,17 +73,121 @@
     height: 50px;
     border-radius: 50px;
     color: #fff;
-    background-color: #1d43a5;
+    background-color: var(--color-button);
     border: none;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     margin-top: 30px;
-  }
+}
   
   .contactForm button:hover {
     background-color: #17347c;
     transition: 0.5s;
     width: 40vh;
     height: 55px;
-  }
+}
+
+@media (max-width: 1250px){
+    .contact{
+        width: 45%;
+    }
+
+    .contactHeader h1{
+        font-size: 2.5rem;
+    }
+
+    .contactHeader hr{
+        width: 280px;
+    }
+}
+
+@media (max-width: 1050px){
+    .contact{
+        width: 47%;
+    }
+
+    .contactHeader h1{
+        font-size: 2rem;
+    }
+
+    .contactHeader hr{
+        width: 260px;
+    }
+
+    .contactForm .input{
+        width: 320px;
+    }    
+
+    .contactForm textarea{
+        width: 310px;
+    }
+
+    .contactForm button{
+        width: 30vh;
+    }
+}
+
+@media (max-width: 800px){
+    .contact{
+        width: 350px;
+    }
+
+    .contactHeader h1{
+        font-size: 1.8rem;
+    }
+
+    .contactHeader hr{
+        width: 220px;
+    }
+
+    .contactForm .input{
+        width: 320px;
+    }    
+
+    .contactForm textarea{
+        width: 310px;
+    }
+
+    .contactForm button{
+        width: 30vh;
+    }
+}
+
+@media (max-width: 500px){
+    .contact{
+        width: 280px;
+    }
+
+    .contactHeader{
+        margin-bottom: 20px;
+    }
+
+    .contactHeader h1{
+        font-size: 15px;
+    }
+
+    .contactHeader hr{
+        width: 180px;
+        height: 1px;
+
+    }
+
+    .contactForm .input{
+        width: 270px;
+        height: 30px;
+        font-size: 0.9rem;
+        margin: 15px;
+    }    
+
+    .contactForm textarea{
+        width: 260px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .contactForm button{
+        width: 25vh;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,154 @@
+.contactTypes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.addressHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.addressHeader h1{
+    font-size: 2.4rem;
+    color: var(--color-black);
+}
+
+.addressHeader hr{
+    width: 250px;
+    height: 4px;
+    background-color: var(--color-black);
+    border-radius: 5px;
+    border: none;
+}
+
+.contactContainer{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vh;
+}
+
+.contactIcon{
+    height: 20vh;
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 2rem 3rem  var(--color-box-shadow);
+    transition: all 0.3s ease;
+}
+
+.contactIcon:hover{
+    box-shadow: none;
+}
+
+.contactIcon h2{
+    font-size: 18px;
+}
+
+.whatsapp {
+    background: linear-gradient(45deg, #1EBB5E, #25D366, #2CEB6F);
+}
+
+.instagram {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.contactIcon a{
+    font-size: 60px;
+    font-style: none;
+    color: #fff;
+}
+
+@media (max-width: 1250px){
+
+    .contactContainer{
+        gap: 13vh;
+    }
+
+    .contactIcon{
+        height: 20vh;
+        width: 50vh;
+    }
+}
+
+@media (max-width: 1050px){
+
+    .contactContainer{
+        gap: 10vh;
+    }
+
+    .contactIcon{
+        height: 20vh;
+        width: 40vh;
+    }
+}
+
+@media (max-width: 800px){
+
+    .addressHeader h1{
+        font-size: 2rem;
+    }
+    
+    .addressHeader hr{
+        width: 230px;
+        height: 4px;
+        background-color: var(--color-black);
+        border-radius: 5px;
+        border: none;
+    }
+
+    .contactContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .contactIcon{
+        height: 20vh;
+        width: 40vh;
+    }
+}
+
+@media (max-width: 500px){
+
+    .addressHeader h1{
+        font-size: 1.8rem;
+    }
+    
+    .addressHeader hr{
+        width: 200px;
+    }
+
+    .contactContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .contactIcon{
+        height: 20vh;
+        width: 40vh;
+        padding: 10px;
+    }
+
+    .contactIcon h2{
+        font-size: 15px;
+    }
+    
+}

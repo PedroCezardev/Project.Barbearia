@@ -3,14 +3,21 @@ import logo_img from '../../assets/Barber Pole.svg';
 import { FaInstagram, FaLocationArrow, FaMobileAlt, FaWhatsapp } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { Link } from 'react-scroll';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 const Footer = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // duração padrão da animação
+      offset: 50, // offset padrão da animação
+    });
+  }, []);
+
   return (
-    <div className={style.footer}>
-        <div className={style.footerHeader}>
-            <h1>Social e Contatos</h1>
-            <hr />
-        </div>
+    <div className={style.footer} data-aos="fade-up" data-aos-delay="300">
         <div className={style.footerLogo}>
             <img src={logo_img} alt="" />
             <h2>Barber Ninja</h2>
@@ -28,9 +35,9 @@ const Footer = () => {
             <p>(81) 99999-9999 (Unidade 2 - Nobre)</p>
         </div>
         <div className={style.footerIcons}>
-           <Link> <FaInstagram /> </Link>
-           <Link> <FaWhatsapp /> </Link>
-           <Link> <FaLinkedinIn /> </Link>
+          <a href="https://www.instagram.com/eopedrinho0/" target="_blank" rel="noopener noreferrer"> <FaInstagram /> </a>
+          <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer"> <FaWhatsapp /> </a>
+          <a href="https://www.linkedin.com/in/pedro-cezar-77a444270/" target="_blank" rel="noopener noreferrer"> <FaLinkedinIn /> </a>
         </div>
         <div className={style.footerEmail}>
             <FaLocationArrow />

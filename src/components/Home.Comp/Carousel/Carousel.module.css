@@ -1,0 +1,92 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #bdb7b7;
+  white-space: nowrap;
+  position: relative;
+  height: 90px;
+  width: 100%;
+  margin-top: 80px;
+  box-shadow: 0 2rem 3rem  var(--color-box-shadow);
+  transition: all 0.3s ease; 
+}
+
+.logos:hover{
+  box-shadow: none;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logosSlide {
+  animation-play-state: paused;
+}
+
+.logosSlide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.logosSlide img {
+  height: 130px;
+  width: 130px;
+  margin: 0 70px;
+}
+
+@media (max-width: 800px){
+  .logos:after,
+  .logos:before{
+    width: 100px;
+  }
+
+  .logos{
+    height: 50px;
+  }
+
+  .logosSlide img {
+    height:80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 500px){
+  .logos:after,
+  .logos:before{
+    width: 70px;
+  }
+
+  .logos{
+    height: 40px;
+  }
+
+  .logosSlide img {
+    height: 70px;
+    width: 70px;
+  }
+}
